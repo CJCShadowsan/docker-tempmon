@@ -1,5 +1,7 @@
 FROM alpine
 
+EXPOSE 9001
+
 RUN apk add --no-cache \
     supervisor \
     ipmitool \
