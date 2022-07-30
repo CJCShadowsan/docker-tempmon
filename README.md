@@ -12,7 +12,7 @@ mkdir var
 docker run --privileged \
     -v $(pwd)/run:/var/run/libvirt \
     -v $(pwd)/var:/var/lib/libvirt \
-    ghcr.io/speedy37/docker-libvirtd/libvirtd:main
+    ghcr.io/cjcshadowsan/docker-tempmon:main
 ```
 
 _libvirtd clients_ examples:
