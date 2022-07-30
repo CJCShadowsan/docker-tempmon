@@ -17,7 +17,7 @@ if [ "${TEMP}" -gt "${MAX}" ] ; then
  # Send a message to syslog
  /usr/bin/logger "Shutting down due to Ambient temp ${TEMP}."
  # Halt the box
- sudo /sbin/shutdown -h now
+ poweroff
  echo "Initiating shutdown..."
  else
   exit 0
