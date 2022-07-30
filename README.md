@@ -16,6 +16,10 @@ _docker run_:
 mkdir -p log/supervisord
 docker run --privileged --name tempmon -d \
     -v $(pwd)/log:/var/log \
+    -v /bin/systemctl:/bin/systemctl \ 
+    -v /run/systemd/system:/run/systemd/system \ 
+    -v /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket \ 
+    -v /sys/fs/cgroup:/sys/fs/cgroup \
     ghcr.io/cjcshadowsan/docker-tempmon:main
 ```
 
