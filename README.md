@@ -2,6 +2,12 @@
 
 Alpine Linux ipmitool docker image running a monitoring script via supervisord.
 
+**** NOTE: ****
+
+This container shuts down nodes if the ambient temperature goes above 30 degrees!!!
+
+*CHANGE TO YOUR NEEDS BEFORE RUNNING*
+
 GitHub action is setup so this image is __updated every week__.
 
 _docker run_:
