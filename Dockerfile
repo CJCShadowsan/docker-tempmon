@@ -31,6 +31,7 @@ RUN apk add --no-cache \
 
 
 COPY supervisord.conf /etc/supervisord.conf
+COPY tempmon.sh /usr/bin/tempmon.sh
 
 VOLUME ["/var/run/libvirt/", "/var/lib/libvirt"]
 
