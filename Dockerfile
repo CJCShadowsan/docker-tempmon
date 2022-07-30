@@ -8,5 +8,6 @@ RUN apk add --no-cache \
 
 COPY supervisord.conf /etc/supervisord.conf
 COPY tempmon.sh /usr/bin/tempmon.sh
+COPY simple.py /usr/bin/simple.py
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
